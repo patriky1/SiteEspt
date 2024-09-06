@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Link styles */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header style */
+        .cabecalho {
+            background-image: url(campo2.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            background-blur: 5px;
+        }
+
+        /* Grid container for cards */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        /* Card style */
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            width: calc(33% - 20px); /* Adjust width to fit 3 cards per row */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .brao {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgcard {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .c {
+            padding: 15px;
+        }
+
+        .c h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .c p {
+            font-size: 1em;
+            text-align: justify;
+            color: #333;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 600px;
+            }
+
+            .cabecalho {
+                font-size: 1.5em;
+            }
+
+            .c h2 {
+                font-size: 1.2em;
+            }
+
+            .c p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cabecalho {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Futebol</h1>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="brao">
+                <a href="https://cidadaoconsumidor.com.br/resultados-dos-jogos-do-brasileirao-serie-a-saiba-todos-os-placares-da-1a-rodada/">
+                    <img class="imgcard" src="./img/brasileirao.jpg" alt="Resultados do Brasileirão Série A">
+                    <div class="c">
+                        <h2>Resultados dos jogos do Brasileirão Série A</h2>
+                        <p>Em um jogo repleto de polêmicas, o Flamengo bateu o Atlético-GO por 2 a 1, neste domingo (14), no estádio Serra Dourada, em Goiânia, e largou bem no Campeonato Brasileiro de 2024. De La Cruz e Pedro fizeram os gols do Rubro-Negro carioca, enquanto Luiz Fernando marcou para o Dragão, que terminou o jogo com dois jogadores e o técnico Jair Ventura expulsos.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="brao">
+                <a href="https://ge.globo.com/pb/futebol/campeonato-paraibano/jogo/06-04-2024/sousa-botafogo-pb.ghtml">
+                    <img class="imgcard" src="sousaec.jpg" alt="Sousa vs Botafogo-PB">
+                    <div class="c">
+                        <h2>VAI FICAR TUDO PARA O ALMEIDÃO!</h2>
+                        <p>Sousa e Botafogo-PB ficaram frente a frente na tarde deste sábado pelo primeiro jogo da final do Campeonato Paraibano Unipê 2024. A partida, que aconteceu no Estádio Marizão, em Sousa, foi truncada, estudada e faltosa e, muito por isso, o placar permaneceu inalterado durante todos os 90 minutos de jogo. A parada agora vai ser decidida no Almeidão, no próximo sábado, quando a Paraíba conhecerá o grande campeão do estado em 2024.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="brao">
+                <a href="https://ge.globo.com/futebol/futebol-internacional/noticia/2024/08/30/resumao-da-janela-na-europa-premier-league-puxa-o-freio-mas-gastos-passam-de-r-322-bilhoes.ghtml">
+                    <img class="imgcard" src="tartaruga.jpg" alt="Transferências na Premier League">
+                    <div class="c">
+                        <h2>Premier League puxa o freio, mas gastos passam de R$ 32,2 bilhões</h2>
+                        <p>Chelsea é de novo o clube que mais investe em contratações, e Serie A da Itália ultrapassa um bilhão de euros; confira os principais destaques do mercado da bola do verão 2024.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
